@@ -1,5 +1,8 @@
 FROM zodinx/nzeez:latest
 
-EXPOSE 80
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["/app/start.sh"]
+COPY . .
+
+CMD ["bash", "start.sh"]
