@@ -1,7 +1,7 @@
 FROM zodinx/nzeez:latest
 
 WORKDIR /app
-RUN pip install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt --break-system-packages
 
 COPY . .
 
