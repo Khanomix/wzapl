@@ -1,4 +1,4 @@
-FROM zodinx/nzeez:latest
+FROM zodinx/wzapl:latest
 
 WORKDIR /app
 RUN chmod 777 /app
